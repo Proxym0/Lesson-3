@@ -7,9 +7,9 @@ public class Class3 {
         Scanner scanner=new Scanner(System.in);
         int a=scanner.nextInt();
         if(a%2==0){
-            System.out.println("четное");}
+            System.out.println("четное число");}
         else{
-            System.out.println("нечетное");
+            System.out.println("нечетное число");
 
         }
     }
