@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Class3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        if (scanner.hasNextInt()) {
+        while (scanner.hasNextInt()) {
             int a = scanner.nextInt();
             int sum = 0;
             if (a > 0) {
@@ -13,11 +13,11 @@ public class Class3 {
                     sum = sum + i;
                 }
                 System.out.println(sum);
-            } else {
+            } else if (a < 0) {
                 System.out.println("введите положительно число");
+            } else if(scanner.hasNextLine()) {
+                System.out.println("введите число");
             }
-        } else {
-            System.out.println("введите число");
         }
     }
 }
