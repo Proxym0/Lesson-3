@@ -8,9 +8,9 @@ public class Class4 {
         int temp=scanner.nextInt();
         if(temp>-5){
             System.out.println("тепло");
-        }else if(-5>=temp&&temp<=-20) {
+        }else if(-5>=temp&&temp>-20) {
             System.out.println("нормально");
-        }else if(temp>=-20){
+        }else if(temp<=-20){
             System.out.println("холодно");
         }else{
             System.out.println(" ");
